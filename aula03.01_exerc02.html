@@ -4,19 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Lógica de programação com Javascript</title>
 </head>
 <body>
   <h1>Lógica de programação com Javascript</h1>
 </body>
 
 <script>
-  var nome = prompt('Qual seu nome?');
-  alert('Bem-vindo(a) ' + nome);
-
-  var endereco = 1.2; //número decimal / número real
-  var estaGravido = false; //boolean
   
-</script>
+  //mostre na tela todos os anos a partir de 104 até o ano 2017, pulando em quatro anos
+  var ano = 1004;
 
+  while(ano <= 2017){
+    document.write(ano + '<br>');
+    //ano = ano + 4;
+    ano += 4;
+  }
+</script>
 </html>

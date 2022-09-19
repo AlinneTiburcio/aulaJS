@@ -25,23 +25,15 @@
     
     //sortear um numero entre 0 e 1
     var resultado = (parseInt(Math.random() * 2));
+    alert('resultado ' + resultado);
     
     //se o numero sorteado for 0, ganha quem escolhe o numero MENOR
-    if(resultado===0){
-
-      if(jogador1 < jogador1){
-        alert('ganhou o jogador 1');
-      } else {
-        alert('ganhou o jogador 2');
-      }
-
+    
     //se o numero sorteado for 1, ganha quem escolhe o numero MAIOR
-    }else{
-      if(jogador1 > jogador1){
-        alert('ganhou o jogador 1');
-      } else {
-        alert('ganhou o jogador 2');
-      }
+    if((resultado === 0 && jogador1 < jogador2) || (resultado === 1 && jogador1 > jogador2)){
+      alert('ganhou o jogador 1');
+    } else {
+      alert('ganhou o jogador 2');
     }
     
  } 
